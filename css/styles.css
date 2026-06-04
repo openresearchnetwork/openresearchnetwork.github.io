@@ -36,76 +36,6 @@ html{
 html.page{
   --choice-bg: var(--light)
 }
-html[data-mode="dim"]{
-  --light: hsla(0,0%,100%,0.87);
-  --color-mode: 'dim';
-  --text: var(--light);
-  --accent: var(--bubble);
-  --choice-bg: var(--bg);
-  --code-bg: var(--translucent-light);
-  --header-text: var(--light);
-  --table-bg: var(--code-bg);
-  --table-haze: rgba(255,255,255,0.1);
-  --table-border: var(--code-bg);
-  --footer-bg: var(--bg);
-  --post-bg: var(--translucent-light)
-}
-html[data-mode="dim"] blockquote{
-  background:var(--translucent-light);
-  color:#dedede
-}
-html[data-mode="dim"] svg.icon{
-  fill:var(--light)
-}
-html[data-mode="dim"] .icon img{
-  background:none
-}
-html[data-mode="dim"] .icon svg{
-  fill:#fafafa
-}
-html[data-mode="dim"] .sidebar_inner::before{
-  display:none
-}
-html[data-mode="dim"] .color_choice::after{
-  background-image:url("../images/night-moon.jpg");
-  transform:translateX(1.4rem)
-}
-@media (prefers-color-scheme: dark){
-  html:not([data-mode="lit"]){
-      --light: hsla(0,0%,100%,0.87);
-      --color-mode: 'dim';
-      --text: var(--light);
-      --accent: var(--bubble);
-      --choice-bg: var(--bg);
-      --code-bg: var(--translucent-light);
-      --header-text: var(--light);
-      --table-bg: var(--code-bg);
-      --table-haze: rgba(255,255,255,0.1);
-      --table-border: var(--code-bg);
-      --footer-bg: var(--bg);
-      --post-bg: var(--translucent-light)
-  }
-  html:not([data-mode="lit"]) blockquote{
-      background:var(--translucent-light);
-      color:#dedede
-  }
-  html:not([data-mode="lit"]) svg.icon{
-      fill:var(--light)
-  }
-  html:not([data-mode="lit"]) .icon img{
-      background:none
-  }
-  html:not([data-mode="lit"]) .icon svg{
-      fill:#fafafa
-  }
-  html:not([data-mode="lit"]) .sidebar_inner::before{
-      display:none
-  }
-  html:not([data-mode="lit"]) .color_choice::after{
-      background-image:url("../images/night-moon.jpg");
-      transform:translateX(1.4rem)
-  }
-}
 .landing-content{
   margin:0;
   padding:2rem;
@@ -349,11 +279,6 @@ hr{
   background:#e7e7e7;
   opacity:0.5;
   margin:1rem 0
-}
-@media (prefers-color-scheme: dark){
-  hr{
-      background:var(--theme)
-  }
 }
 aside h3{
   position:relative;
@@ -1095,52 +1020,6 @@ figcaption{
 }
 .to_top:hover svg{
   opacity:1
-}
-.color_mode{
-  height:1.5rem;
-  display:grid;
-  align-items:center;
-  margin:0 0.5rem
-}
-@media screen and (min-width: 769px){
-  .color_mode{
-      margin:0 1.5rem;
-      grid-template-columns:1fr
-  }
-}
-.color_choice{
-  width:3rem;
-  background-color:var(--translucent-light);
-  border-radius:1rem;
-  height:1.5rem;
-  outline:none;
-  border:none;
-  -webkit-appearance:none;
-  cursor:pointer;
-  position:relative;
-  position:relative;
-  overflow:hidden;
-  box-shadow:0 0.25rem 1rem rgba(0,0,0,0.15)
-}
-.color_choice::after{
-  content:"";
-  position:absolute;
-  top:0.1rem;
-  left:0.1rem;
-  width:1.3rem;
-  height:1.3rem;
-  background-image:url("../images/sun.svg");
-  background-position:center;
-  background-size:cover;
-  border-radius:50%;
-  z-index:2
-}
-.color_animate{
-  transition:transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1)
-}
-.color_animate::after{
-  transition:transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  will-change:transform
 }
 .taxonomy{
   text-transform:capitalize

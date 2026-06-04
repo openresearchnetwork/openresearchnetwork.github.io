@@ -1,10 +1,33 @@
 
 
+  
+
+  
+
+  
+
+  
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+
+
 <!DOCTYPE html>
-<html>
+<html data-mode="lit">
   <head>
     <title>
-      Open Research Network Formula - Open Research Network
+      ORN formula - Open Research Network
     </title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -18,8 +41,8 @@
     </script>
     <link rel=stylesheet
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel=stylesheet href="/css/index.css">
     <link rel=stylesheet href="/css/styles.css">
+    <link rel=stylesheet href="/css/index.css">
     <title>Open Research Network</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -49,12 +72,6 @@
     <link rel=alternate type=application/json href=/js/index.json title="Open Research Network">
     <link rel=stylesheet type=text/css></head>
     
-<style>
-.main-nav>li>a {
-  color: #000000 !important;
-}
-</style>
-
   </head>
   <body data-code="100" data-lines="false" id="documentTop">
     <header class="nav_header">
@@ -90,8 +107,8 @@
           
             
             <div class="nav_parent ">
-              <a href="../../affiliations/" class="nav_item" title="Affiliations">
-                Affiliations
+              <a href="../../affiliations/" class="nav_item" title="Network">
+                Network
               </a>
             </div>
             <div class="d-block d-sm-block d-md-none">
@@ -99,8 +116,6 @@
               
               
               
-              
-
               <div class="nav ">
                 <a href="../../affiliations/organizations/" class="nav_item" title="Organizations">
                   Organizations
@@ -109,8 +124,6 @@
               
               
               
-              
-
               <div class="nav ">
                 <a href="../../affiliations/members/" class="nav_item" title="Members">
                   Members
@@ -119,11 +132,9 @@
               
               
               
-              
-
               <div class="nav ">
-                <a href="../../affiliations/partnership/" class="nav_item" title="Partnership">
-                  Partnership
+                <a href="../../affiliations/partnership/" class="nav_item" title="Partners">
+                  Partners
                 </a>
               </div>
               
@@ -169,22 +180,6 @@
               
               
               
-              
-              
-              
-
-              <div class="nav ">
-                <a href="../team/" class="nav_item" title="Team">
-                  Team
-                </a>
-              </div>
-              
-              
-              
-              
-              
-              
-
               <div class="nav nav_active">
                 <a href="./" class="nav_item" title="Formula">
                   Formula
@@ -193,10 +188,6 @@
               
               
               
-              
-              
-              
-
               <div class="nav ">
                 <a href="../funding/" class="nav_item" title="Funding">
                   Funding
@@ -205,8 +196,6 @@
               
               
             </div>
-            
-          
             
           
             
@@ -225,60 +214,51 @@
           
           
         </div>
-        <div class="follow">
-          <a href="https://github.com/openresearchnetwork" target="_blank">
+        <div class="follow" aria-label="Community links">
+          <a
+            href="https://github.com/openresearchnetwork"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Research Network on GitHub">
             <svg class="icon">
               <title>github</title>
               <use xlink:href="#github"/>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/company/open-research-network/" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/open-research-network/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Research Network on LinkedIn">
             <svg class="icon">
               <title>linkedin</title>
               <use xlink:href="#linkedin"/>
             </svg>
           </a>
-          <a href="https://twitter.com/researchnetx" target="_blank">
-            <svg class="icon">
-              <title>twitter</title>
-              <use xlink:href="#twitter"/>
-            </svg>
-          </a>
-          <a href="/discord" target="_blank">
+          <a
+            href="/discord"
+            target="_blank"
+            rel="noopener"
+            class="nav_community"
+            aria-label="Join the Open Research Network community on Discord">
             <svg class="icon">
               <title>discord</title>
               <use xlink:href="#discord"/>
             </svg>
+            <span>Community</span>
           </a>
-          <a href="/feed_rss_created.xml" target="_blank">
-            <svg class="icon">
-              <title>rss</title>
-              <use xlink:href="#rss"/>
-            </svg>
-          </a>
-          <a href="https://www.youtube.com/@openresearchnetwork" target="_blank">
-            <svg class="icon">
-              <title>youtube</title>
-              <use xlink:href="#youtube"/>
-            </svg>
-          </a>
-          <div class=color_mode><input type=checkbox class=color_choice id=mode></div>
         </div>
       </nav>
-      <nav class="nav d-none d-sm-none d-md-block">
+      
+      <nav class="nav nav_submenu_bar d-none d-sm-none d-md-block" aria-label="Section navigation">
         <div class='nav_body nav_extra extra'>
           <!-- SUB-MENU -->
-          <div class="" style="border-top:1px solid white;">
-              <a href="../team/" class="nav_item" title="Team">
-                Team
-              </a>
-            </div>
-            <div class="nav_active" style="border-top:1px solid white;">
+          <div class="nav_extra_item nav_active">
               <a href="./" class="nav_item" title="Formula">
                 Formula
               </a>
             </div>
-            <div class="" style="border-top:1px solid white;">
+            <div class="nav_extra_item ">
               <a href="../funding/" class="nav_item" title="Funding">
                 Funding
               </a>
@@ -286,8 +266,9 @@
             
         </div>
       </nav>
+      
     </header>
-    <main>
+    <main class="main_with_submenu">
       <style>
         .card-columns div{height:200px}
         .card-columns img{height:160px}
@@ -295,115 +276,70 @@
         footer.citation *{margin-top:20px;font-size:10px!important;font-style:italic!important}
       </style>
       <div class=container>
-        <div class="row mb-0 mt-5">
-          
-          <div class="mt-5"></div>
-          
-          <div class="col alert alert-danger mt-5 mb-0">
-            The Open Research Network (ORN) is currently in its
-            development phase, with an anticipated official launch in 2025. We
-            invite you to stay connected for updates and announcements!
-          </div>
-        </div>
         <section class="wrap content">
           
-<section>
-  <div class="row pt-0">
-    <div class="col-md-9 mx-auto pt-0">
+<section class="orn-page">
+  <div class="orn-page-shell">
+    <header class="orn-page-hero">
+      <p class="orn-page-kicker">
+        About
+      </p>
+      <h1>ORN formula</h1>
       
-        <h1 id="open-research-network-formula">Open Research Network  Formula<a class="headerlink" href="#open-research-network-formula" title="Permanent link"> #</a></h1>
-<p>This formula will encapsulate the values and practices that contribute to ORN's
-mission of promoting open science and technology through community
-collaboration, education, and project development.</p>
-<p><strong>1. Open Collaboration:</strong> At the heart of ORN lies the belief in open
-collaboration. We thrive by sharing knowledge freely, engaging with diverse
-perspectives, and fostering an environment where everyone is encouraged to
-contribute. Our success is built on the collective wisdom and efforts of our
-community, partners, and stakeholders.</p>
-<p><strong>2. Continuous Learning and Innovation:</strong> ORN commits to continuous learning
-and pushing the boundaries of what's possible in open science and technology. We
-encourage curiosity, experimentation, and the application of new ideas to solve
-complex problems. By staying at the forefront of technological and scientific
-advancements, we ensure that our community and projects remain relevant and
-impactful.</p>
-<p><strong>3. Inclusivity and Accessibility:</strong> We believe that open science is for
-everyone. ORN is dedicated to creating inclusive spaces where individuals from
-all backgrounds can learn, contribute, and grow. By removing barriers to entry
-and promoting accessibility, we empower more people to participate in science
-and technology, enriching our community with a wide range of experiences and
-insights.</p>
-<p><strong>4. Ethical Responsibility:</strong> Our work is guided by a strong sense of ethical
-responsibility. ORN advocates for the responsible use of technology and data,
-ensuring that our projects and collaborations contribute positively to society
-and the environment. We prioritize transparency, accountability, and the ethical
-implications of our actions in all our endeavors.</p>
-<p><strong>5. Community Empowerment:</strong> Success for ORN is measured by the empowerment of
-our community. We invest in programs, resources, and support systems that enable
-our members to achieve their goals, whether they're learning new skills,
-contributing to projects, or leading initiatives that drive open science
-forward. By empowering individuals, we strengthen the foundation of our
-collective mission.</p>
-<p><strong>6. Sustainability and Impact:</strong> In all our activities, ORN emphasizes
-sustainability and long-term impact. We seek to create lasting contributions to
-the fields of open science and technology, focusing on solutions and projects
-that have a positive, enduring effect on research, education, and society as a
-whole.</p>
-<p><strong>7. Implementation and Adaptation:</strong> Recognizing the dynamic nature of the open
-science ecosystem, ORN remains flexible and responsive to change. We
-continuously assess our strategies and operations, adapting our approach to meet
-emerging challenges and opportunities. This agility ensures that ORN can sustain
-its mission and impact over time.</p>
-<p><strong>8. Communication Excellence:</strong> At ORN, we understand that effective
-communication is foundational to the success of any project. We encourage our
-community to continually refine their communication skills, fostering clarity,
-openness, and constructive dialogue. Effective communication bridges the gap
-between diverse members of our community, enabling seamless collaboration,
-knowledge sharing, and mutual understanding. By prioritizing transparency in our
-interactions and valuing every voice, we create an environment where ideas
-flourish and challenges are addressed collaboratively. Our commitment to
-communication excellence ensures that all members feel heard, valued, and
-connected, driving the collective success of our initiatives.</p>
-<p><strong>9. Proactiveness and Initiative:</strong> ORN champions a culture of proactiveness
-and self-driven initiative. We encourage our community members to actively
-engage in projects, propose new ideas, and take the lead in areas where they
-feel passionate. This proactive mindset, coupled with effective communication,
-enables individuals to navigate challenges creatively, seek feedback
-constructively, and contribute significantly to the advancement of open science
-and open source. By fostering an environment where taking initiative is
-celebrated and supported, we empower our members to make meaningful impacts,
-drive innovation, and steer ORN and its projects toward shared goals and
-successes.</p>
-<p>This Success Formula represents the core principles and practices that guide
-Open Research Network. By adhering to these tenets, we aim to foster a vibrant
-community that advances the frontiers of open science and technology, making
-meaningful contributions to the world.</p>
+      <p>The principles that guide how Open Research Network builds trust, collaboration, and sustainable impact across scientific communities.</p>
+      
+    </header>
+
+    <article class="orn-markdown">
+      
+        <p>The ORN formula describes how we want the network to grow. It is not a rigid
+process or a hierarchy. It is a set of principles for building an open research
+ecosystem that is useful, trustworthy, and sustainable.</p>
+<h2 id="open-collaboration">Open collaboration<a class="headerlink" href="#open-collaboration" title="Permanent link"> #</a></h2>
+<p>ORN is built on the belief that scientific progress is stronger when knowledge,
+tools, infrastructure, and learning are shared. We encourage groups to work in
+public when possible, document decisions, and make outputs reusable by others.</p>
+<h2 id="institutional-respect">Institutional respect<a class="headerlink" href="#institutional-respect" title="Permanent link"> #</a></h2>
+<p>The network is designed for collaboration between universities, laboratories,
+research groups, non-profits, open-source projects, and partners. Each group can
+keep its own identity and priorities while participating in shared activities.</p>
+<h2 id="continuous-learning">Continuous learning<a class="headerlink" href="#continuous-learning" title="Permanent link"> #</a></h2>
+<p>Open research depends on people learning together. ORN supports workshops,
+mentoring, courses, events, and informal peer exchange so that knowledge can
+move between communities and generations of researchers.</p>
+<h2 id="responsible-innovation">Responsible innovation<a class="headerlink" href="#responsible-innovation" title="Permanent link"> #</a></h2>
+<p>AI, data science, automation, and research software can accelerate discovery,
+but they must be used carefully. ORN promotes responsible, transparent, and
+reproducible approaches to technology in research workflows.</p>
+<h2 id="inclusive-participation">Inclusive participation<a class="headerlink" href="#inclusive-participation" title="Permanent link"> #</a></h2>
+<p>A strong research network should make participation easier for people from
+different backgrounds, regions, institutions, and levels of experience. ORN aims
+to create welcoming spaces where contributors can learn, ask questions, and
+build confidence.</p>
+<h2 id="sustainable-infrastructure">Sustainable infrastructure<a class="headerlink" href="#sustainable-infrastructure" title="Permanent link"> #</a></h2>
+<p>Scientific communities need infrastructure that can last beyond a single
+project cycle. ORN encourages reusable tools, documented processes, shared
+services, and partnerships that reduce duplicated effort.</p>
+<h2 id="clear-communication">Clear communication<a class="headerlink" href="#clear-communication" title="Permanent link"> #</a></h2>
+<p>Collaboration depends on communication that is respectful, documented, and easy
+to follow. We value clarity, constructive feedback, and transparent expectations
+across projects and communities.</p>
+<h2 id="proactive-contribution">Proactive contribution<a class="headerlink" href="#proactive-contribution" title="Permanent link"> #</a></h2>
+<p>ORN grows when people and organizations bring ideas forward. We encourage
+members and affiliates to propose events, share needs, identify opportunities,
+and help shape the network through practical contributions.</p>
+<h2 id="lasting-impact">Lasting impact<a class="headerlink" href="#lasting-impact" title="Permanent link"> #</a></h2>
+<p>The purpose of the network is to help scientific communities do better work
+together. Success means more visible projects, more reusable tools, more
+connected groups, and more research outcomes that can benefit society.</p>
 <p><small>
-  <i>
-    Note: This Formula is based on the
-    <a
-      href="https://opensciencelabs.org/about/formula/"
-      target="_blank">
-      Open Science Labs Formula
-    </a>.
-  </i>
+  This formula is inspired by the
+  <a href="https://opensciencelabs.org/about/formula/" target="_blank" rel="noopener">
+    Open Science Labs Formula
+  </a>.
 </small></p>
-        <div>
-          <p>
-            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-                <img
-                  alt="Creative Commons License"
-                  style="border-width:0"
-                  src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-            </a>
-            <br />
-            This text is licensed under a
-            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-                Creative Commons Attribution-ShareAlike 4.0 International License
-            </a>.
-          </p>
-        </div>
       
-    </div>
+    </article>
   </div>
 </section>
 
@@ -482,8 +418,20 @@ meaningful contributions to the world.</p>
     </svg>
     
     <footer class=footer>
-      <div class="footer_inner wrap pale">
-        <p>Copyright&nbsp;<span class=year></span>&nbsp;Open Research Network.</p>
+      <div class="footer_inner wrap pale site_footer_inner">
+        <div class="footer_identity">
+          <strong>Open Research Network</strong>
+          <span>Building an open, collaborative research ecosystem.</span>
+        </div>
+        <div class="footer_legal">
+          <p>Copyright&nbsp;<span class=year></span>&nbsp;Open Research Network.</p>
+          <p>
+            Website content is licensed under
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              CC BY-SA 4.0
+            </a>.
+          </p>
+        </div>
         <a class=to_top href=#documentTop>
           <svg class="icon">
             <title>to-top</title>

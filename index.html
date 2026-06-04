@@ -1,7 +1,18 @@
 
 
+  
+
+  
+
+  
+
+  
+
+  
+
+
 <!DOCTYPE html>
-<html>
+<html data-mode="lit">
   <head>
     <title>
       Open Research Network - Open Research Network
@@ -18,8 +29,8 @@
     </script>
     <link rel=stylesheet
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel=stylesheet href="/css/index.css">
     <link rel=stylesheet href="/css/styles.css">
+    <link rel=stylesheet href="/css/index.css">
     <title>Open Research Network</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -84,8 +95,8 @@
           
             
             <div class="nav_parent ">
-              <a href="affiliations/" class="nav_item" title="Affiliations">
-                Affiliations
+              <a href="affiliations/" class="nav_item" title="Network">
+                Network
               </a>
             </div>
             <div class="d-block d-sm-block d-md-none">
@@ -93,8 +104,6 @@
               
               
               
-              
-
               <div class="nav ">
                 <a href="affiliations/organizations/" class="nav_item" title="Organizations">
                   Organizations
@@ -103,8 +112,6 @@
               
               
               
-              
-
               <div class="nav ">
                 <a href="affiliations/members/" class="nav_item" title="Members">
                   Members
@@ -113,11 +120,9 @@
               
               
               
-              
-
               <div class="nav ">
-                <a href="affiliations/partnership/" class="nav_item" title="Partnership">
-                  Partnership
+                <a href="affiliations/partnership/" class="nav_item" title="Partners">
+                  Partners
                 </a>
               </div>
               
@@ -163,18 +168,6 @@
               
               
               
-              
-
-              <div class="nav ">
-                <a href="about/team/" class="nav_item" title="Team">
-                  Team
-                </a>
-              </div>
-              
-              
-              
-              
-
               <div class="nav ">
                 <a href="about/formula/" class="nav_item" title="Formula">
                   Formula
@@ -183,8 +176,6 @@
               
               
               
-              
-
               <div class="nav ">
                 <a href="about/funding/" class="nav_item" title="Funding">
                   Funding
@@ -193,8 +184,6 @@
               
               
             </div>
-            
-          
             
           
             
@@ -213,54 +202,44 @@
           
           
         </div>
-        <div class="follow">
-          <a href="https://github.com/openresearchnetwork" target="_blank">
+        <div class="follow" aria-label="Community links">
+          <a
+            href="https://github.com/openresearchnetwork"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Research Network on GitHub">
             <svg class="icon">
               <title>github</title>
               <use xlink:href="#github"/>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/company/open-research-network/" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/open-research-network/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Research Network on LinkedIn">
             <svg class="icon">
               <title>linkedin</title>
               <use xlink:href="#linkedin"/>
             </svg>
           </a>
-          <a href="https://twitter.com/researchnetx" target="_blank">
-            <svg class="icon">
-              <title>twitter</title>
-              <use xlink:href="#twitter"/>
-            </svg>
-          </a>
-          <a href="/discord" target="_blank">
+          <a
+            href="/discord"
+            target="_blank"
+            rel="noopener"
+            class="nav_community"
+            aria-label="Join the Open Research Network community on Discord">
             <svg class="icon">
               <title>discord</title>
               <use xlink:href="#discord"/>
             </svg>
+            <span>Community</span>
           </a>
-          <a href="/feed_rss_created.xml" target="_blank">
-            <svg class="icon">
-              <title>rss</title>
-              <use xlink:href="#rss"/>
-            </svg>
-          </a>
-          <a href="https://www.youtube.com/@openresearchnetwork" target="_blank">
-            <svg class="icon">
-              <title>youtube</title>
-              <use xlink:href="#youtube"/>
-            </svg>
-          </a>
-          <div class=color_mode><input type=checkbox class=color_choice id=mode></div>
         </div>
       </nav>
-      <nav class="nav d-none d-sm-none d-md-block">
-        <div class='nav_body nav_extra extra'>
-          <!-- SUB-MENU -->
-          
-        </div>
-      </nav>
+      
     </header>
-    <main>
+    <main class="main_without_submenu">
       <style>
         .card-columns div{height:200px}
         .card-columns img{height:160px}
@@ -268,86 +247,95 @@
         footer.citation *{margin-top:20px;font-size:10px!important;font-style:italic!important}
       </style>
       <div class=container>
-        <div class="row mb-0 mt-5">
-          
-          <div class="col alert alert-danger mt-5 mb-0">
-            The Open Research Network (ORN) is currently in its
-            development phase, with an anticipated official launch in 2025. We
-            invite you to stay connected for updates and announcements!
-          </div>
-        </div>
         <section class="wrap content">
           
 
 
 
-<style>
-  .card-columns div {
-    height: 200px;
-  }
 
-  .card-columns img {
-    height: 160px;
-  }
+<div class="orn-home">
+  <section class="orn-hero" aria-labelledby="orn-hero-title">
+    <div class="orn-hero__background" aria-hidden="true"></div>
+    <div class="orn-shell orn-hero__inner">
+      <div class="orn-hero__copy">
+        <p class="orn-eyebrow">
+          <span class="orn-eyebrow__dot" aria-hidden="true"></span>
+          Open science. Shared infrastructure. Collective progress.
+        </p>
+        <h1 id="orn-hero-title">
+          A trusted network for researchers building science together.
+        </h1>
+        <p class="orn-hero__lead">
+          Open Research Network connects scientists, research software engineers,
+          educators, organizations, and partners around open tools, shared
+          knowledge, and collaborative research workflows.
+        </p>
+        <div class="orn-hero__actions" aria-label="Primary actions">
+          <a class="orn-button orn-button--primary" href="/affiliations/">
+            Join the network
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a class="orn-button orn-button--secondary" href="/discord/">
+            Connect with the community
+          </a>
+        </div>
+        <div class="orn-hero__assurance" aria-label="Network principles">
+          <span><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Community care</span>
+          <span><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Open-source practices</span>
+          <span><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i> Collaborative support</span>
+        </div>
+      </div>
 
-  .card-columns a {
-    text-decoration: None;
-  }
-
-  footer.citation * {
-    margin-top: 20px;
-    font-size: 10px !important;
-    font-style: italic !important;
-  }
-  .welcome-section {
-    background-image: url("/images/home/header.png");
-    background-size: cover;
-    color: white;
-    padding: 100px 0;
-  }
-
-  .welcome-section *,
-  .card-text,
-  .card-title {
-    color: #333333 !important;
-  }
-
-  .card-title {
-    font-weight: bold !important;
-  }
-  .overlay {
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.7
-    ); /* Black background with 50% opacity */
-    color: white;
-    padding: 100px 0;
-  }
-</style>
-
-<div class="container-fluid welcome-section">
-  <div class="overlay">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1>Welcome to Open Research Network (ORN)</h1>
-        <h2>
-          Fostering innovation and collaboration with open science practices and
-          state of art open source libraries and tools.
-        </h2>
+      <div class="orn-hero__visual" aria-label="Illustration of researchers collaborating">
+        <div class="orn-visual-card orn-visual-card--top">
+          <span class="orn-visual-card__icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
+          <strong>Community hub</strong>
+          <small>People, projects, and opportunities</small>
+        </div>
+        <img
+          src="/images/home/International cooperation-bro.png"
+          alt="Researchers collaborating around shared documents and a global research table"
+        >
+        <div class="orn-visual-card orn-visual-card--bottom">
+          <strong>From idea to impact</strong>
+          <small>Events · mentorship · shared infrastructure</small>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<section class="wrap content extra" id="home">
-  <div class="container pb-3">
-    <div class="row my-1">
-      <div class="col-md-6">
-        <h2>Our Mission</h2>
-        <p>
-          ORN emerges from the vibrant Open Science Labs community, a
+  <section class="orn-trust-strip" aria-label="Why researchers can trust ORN">
+    <div class="orn-shell orn-trust-strip__grid">
+      <div class="orn-trust-item">
+        <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+        <div>
+          <strong>Transparent values</strong>
+          <span>Open science, open source, and accountable collaboration.</span>
+        </div>
+      </div>
+      <div class="orn-trust-item">
+        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+        <div>
+          <strong>Community first</strong>
+          <span>Designed for researchers, educators, engineers, and students.</span>
+        </div>
+      </div>
+      <div class="orn-trust-item">
+        <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+        <div>
+          <strong>Shared ecosystem</strong>
+          <span>Programs, partnerships, tools, and infrastructure that compound.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="orn-section orn-section--intro" aria-labelledby="orn-mission-title">
+    <div class="orn-shell orn-two-column">
+      <article class="orn-panel orn-panel--large">
+        <p class="orn-section-label">Mission</p>
+        <h2 id="orn-mission-title">Connecting scientific groups across disciplines.</h2>
+        <p>ORN emerges from the vibrant Open Science Labs community, a
 collective endeavor of scientists, researchers, educators, software
 engineers, and students. Our goal is to foster connectivity among
 scientific groups across disciplines, facilitating the sharing of
@@ -355,173 +343,200 @@ infrastructure and resources, and promoting collaborative research. By
 leveraging advanced AI and Data Science, ORN accelerates research
 efforts, both academic and private, offering tools, platforms, and
 guidance to enhance research workflows.
+</p>
+      </article>
+      <aside class="orn-panel orn-panel--accent">
+        <p class="orn-section-label">Supported by</p>
+        <h2>Programs and partners that strengthen the network.</h2>
+        <p>ORN grows from the Open Science Labs ecosystem and is supported by
+programs such as the Incubator, Internship, and Learning Programs.
+Funding and financial administration are not handled through a direct
+ORN fiscal sponsor; instead, access paths are coordinated through OSL
+partnerships, including Open Source Collective for eligible open-source
+projects and The GRAPH Network for financial management of non-open-source
+or broader research initiatives.
+</p>
+        <a class="orn-text-link" href="/about/funding/">
+          Learn about our support model
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </aside>
+    </div>
+  </section>
 
+  <section class="orn-section" aria-labelledby="orn-space-title">
+    <div class="orn-shell">
+      <div class="orn-section-heading">
+        <p class="orn-section-label">ORN Space</p>
+        <h2 id="orn-space-title">A collaborative plaza for research communities.</h2>
+        <p>
+          ORN Space brings people, services, training, publications, and project
+          opportunities into one community-oriented environment.
         </p>
       </div>
-      <div class="col-md-6">
-        <h2>Supported by Programs and Partners</h2>
-        <p>
-          We are bolstered by Open Science Labs Programs including the
-Incubator, Internship, and Learning Programs, and proudly partnered
-with The GRAPH Network, our Fiscal Sponsor. This support allows us to
-concentrate on strategic and operational activities, driving forward
-our mission with efficiency and focus.
 
-        </p>
+      <div class="orn-feature-grid">
+        <article class="orn-feature-card">
+          <span class="orn-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
+          <h3>Communication channels</h3>
+          <p>Email groups and Discord spaces for focused conversations and community support.</p>
+        </article>
+        <article class="orn-feature-card">
+          <span class="orn-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+          <h3>Opportunities</h3>
+          <p>Share job openings, internships, project calls, and collaboration requests.</p>
+        </article>
+        <article class="orn-feature-card">
+          <span class="orn-icon"><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i></span>
+          <h3>Knowledge sharing</h3>
+          <p>Make publications, projects, resources, courses, and training more discoverable.</p>
+        </article>
+        <article class="orn-feature-card">
+          <span class="orn-icon"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></span>
+          <h3>Events and workshops</h3>
+          <p>Support online courses, workshops, seminars, and community learning activities.</p>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div class="row my-1">
-      <div class="col-12">
-        <h2>ORN Space: A Collaborative Hub</h2>
-        <p>ORN Space is our digital plaza, offering:</p>
-<ul>
-  <li>Communication channels like email groups and Discord servers.</li>
-  <li>Job opportunity listings.</li>
-  <li>
-    Information sharing on publications, projects, and collaborative
-    opportunities.
-  </li>
-  <li>
-    Resources for services, courses, training, and infrastructure needs.
-  </li>
-  <li>Internship opportunities and</li>
-  <li>a platform for online courses, events, and workshops.</li>
-</ul>
-
-      </div>
-    </div>
-
-    <div class="row my-1">
-      <div class="col-12">
-        <h2>Collaboration Over Competition</h2>
-        <p>
-          We believe in the power of collaboration to address common challenges
+  <section class="orn-section orn-section--collaboration" aria-labelledby="orn-collaboration-title">
+    <div class="orn-shell orn-collab-card">
+      <div>
+        <p class="orn-section-label">Collaboration over competition</p>
+        <h2 id="orn-collaboration-title">Shared challenges deserve shared solutions.</h2>
+        <p>We believe in the power of collaboration to address common challenges
 faced by scientific organizations. Through collective efforts, we can
 overcome resource limitations and competitive pressures, especially
 for smaller groups. For instance, joining forces to develop
 open-source solutions can eliminate costly software licenses,
 benefiting all involved parties.
-
-        </p>
+</p>
+        <div class="orn-collab-points">
+          <span><i class="fa-solid fa-check" aria-hidden="true"></i> Reduce duplicated effort</span>
+          <span><i class="fa-solid fa-check" aria-hidden="true"></i> Share trusted infrastructure</span>
+          <span><i class="fa-solid fa-check" aria-hidden="true"></i> Build sustainable open tools</span>
+        </div>
       </div>
+      <img
+        src="/images/home/header.png"
+        alt="Researchers working together on diagrams and research questions"
+        loading="lazy"
+      >
     </div>
+  </section>
 
-    <div class="row my-1">
-      <div class="col-12">
-        <h2>Joining ORN</h2>
-        <p>
-          Affiliation with ORN is open to organizations and individuals keen
+  <section class="orn-section" aria-labelledby="orn-affiliation-title">
+    <div class="orn-shell">
+      <div class="orn-section-heading orn-section-heading--center">
+        <p class="orn-section-label">Joining ORN</p>
+        <h2 id="orn-affiliation-title">Choose the path that fits your role in research.</h2>
+        <p>Affiliation with ORN is open to organizations and individuals keen
 on contributing to the advancement of science and research through
 open science practices.
-
-        </p>
+</p>
       </div>
 
-      
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Organization Collaborative Affiliation</h5>
-              <p class="card-text">
-                Universities, research centers, labs, companies, and scientific
+      <div class="orn-affiliation-grid">
+        <article class="orn-affiliation-card">
+          <span class="orn-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span>
+          <h3>Organization affiliation</h3>
+          <p>Universities, research centers, labs, companies, and scientific
 groups are invited to affiliate.
-
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Organization Partners</h5>
-              <p class="card-text">
-                Companies and groups can contribute by offering services to
-support affiliated organizations.
-
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Member Affiliation</h5>
-              <p class="card-text">
-                Individuals linked to academic or scientific bodies can join to
+</p>
+          <a class="orn-card-link" href="/affiliations/organizations/">For organizations</a>
+        </article>
+        <article class="orn-affiliation-card orn-affiliation-card--featured">
+          <span class="orn-icon"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i></span>
+          <h3>Member affiliation</h3>
+          <p>Individuals linked to academic or scientific bodies can join to
 contribute across various roles. For those without formal
 affiliation, options are available through IGDORE or
 case-by-case consideration.
-
-              </p>
-            </div>
-          </div>
-        </div>
+</p>
+          <a class="orn-card-link" href="/affiliations/members/">For individuals</a>
+        </article>
+        <article class="orn-affiliation-card">
+          <span class="orn-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></span>
+          <h3>Partner affiliation</h3>
+          <p>Companies and groups can contribute by offering services to
+support affiliated organizations.
+</p>
+          <a class="orn-card-link" href="/affiliations/partnership/">For partners</a>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div class="row my-1">
-      <div class="col-12">
-        <h2>Our Formula</h2>
-        <p>
-          At Open Research Network, our formula for success is built
+  <section class="orn-section orn-section--formula" aria-labelledby="orn-formula-title">
+    <div class="orn-shell orn-formula-grid">
+      <div class="orn-section-heading">
+        <p class="orn-section-label">Our formula</p>
+        <h2 id="orn-formula-title">A simple operating model for durable impact.</h2>
+        <p>At Open Research Network, our formula for success is built
 on a foundation of collaboration, innovation, and openness. We believe
 in empowering our network by providing the tools, resources, and
 support needed to advance science and technology in an open and
 accessible manner. Our commitment to these principles guides our
 initiatives, programs, and partnerships, ensuring that together, we
 can make a lasting impact on the world.
+</p>
+      </div>
+      <div class="orn-principle-list" aria-label="ORN principles">
+        <article>
+          <strong>Openness</strong>
+          <span>Accessible knowledge, transparent practices, and open-source foundations.</span>
+        </article>
+        <article>
+          <strong>Innovation</strong>
+          <span>AI, data science, and research software used responsibly to accelerate discovery.</span>
+        </article>
+        <article>
+          <strong>Collaboration</strong>
+          <span>People and organizations working together instead of solving alone.</span>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <section class="orn-section orn-section--partnership" aria-labelledby="orn-partnership-title">
+    <div class="orn-shell orn-partnership-card">
+      <div class="orn-partnership-card__copy">
+        <p class="orn-section-label">Partnership and funding access</p>
+        <h2 id="orn-partnership-title">Help build the research ecosystem scientists deserve.</h2>
+        <p>We are seeking partnerships with organizations interested in
+supporting this research ecosystem through funding access, financial
+management, infrastructure, services, expertise, training, or events.
+ORN does not currently maintain a direct fiscal sponsorship structure;
+instead, eligible initiatives may access support through OSL partnership
+pathways.
+</p>
+        <a
+          class="orn-button orn-button--primary"
+          href="mailto:team@opensciencelabs.org?subject=Partnership%20with%20Open%20Research%20Network"
+        >
+          Start a partnership conversation
+        </a>
+      </div>
+      <div class="orn-funding-routes" aria-label="Funding and financial management access paths">
+        <p class="orn-funding-routes__label">Access paths through OSL partnerships</p>
+        <article class="orn-route-card">
+          <span>Open-source projects</span>
+          <strong>Open Source Collective</strong>
+          <p>Fiscal sponsorship pathway for eligible open-source work through the Open Science Labs ecosystem.</p>
+        </article>
+        <article class="orn-route-card">
+          <span>Non-open-source and research initiatives</span>
+          <strong>The GRAPH Network</strong>
+          <p>Financial management pathway for broader research projects that need administrative support.</p>
+        </article>
+        <p class="orn-route-note">
+          ORN does not currently have a direct fiscal sponsor.
         </p>
       </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="container pb-3">
-    <div class="row my-1">
-      <div class="col-12">
-        <h2>Partnership</h2>
-
-        <div>
-          <p>We are seeking partnerships with organizations interested in
-supporting this research ecosystem. Our initiative offers a
-unique opportunity for entities to contribute resources, expertise,
-or services that can benefit the wider scientific community. This
-collaboration will not only facilitate research and development but
-also demonstrate a shared commitment to advancing knowledge and
-innovation.
-</p>
-
-          <p>
-            If you want to be our partner, please us an email to
-            <a
-              href="mailto:team@opensciencelabs.org"
-              target="_blank"
-            >team@opensciencelabs.org</a>.
-          </p>
-        </div>
-
-        <h2>Our Partners</h2>
-
-        <div class="card-columns partners">
-          <div class="card align-middle text-center">
-            <a href="https://thegraphnetwork.org/">
-              <img
-                src="https://thegraphnetwork.org/wp-content/uploads/2021/07/Research_GRAPH_logo-2-1-1-2-3-150x150.png"
-                alt="The GRAPH Network"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
 
         </section>
@@ -599,8 +614,20 @@ innovation.
     </svg>
     
     <footer class=footer>
-      <div class="footer_inner wrap pale">
-        <p>Copyright&nbsp;<span class=year></span>&nbsp;Open Research Network.</p>
+      <div class="footer_inner wrap pale site_footer_inner">
+        <div class="footer_identity">
+          <strong>Open Research Network</strong>
+          <span>Building an open, collaborative research ecosystem.</span>
+        </div>
+        <div class="footer_legal">
+          <p>Copyright&nbsp;<span class=year></span>&nbsp;Open Research Network.</p>
+          <p>
+            Website content is licensed under
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              CC BY-SA 4.0
+            </a>.
+          </p>
+        </div>
         <a class=to_top href=#documentTop>
           <svg class="icon">
             <title>to-top</title>
