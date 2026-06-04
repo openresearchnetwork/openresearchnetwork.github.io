@@ -1,61 +1,60 @@
 ---
-title: Open Research Network
+title: "Network affiliations"
+description: "Affiliation pathways for individuals, universities, labs, scientific groups, projects, and partners that want to advance open research together."
+section_label: "Network"
 authors:
-  - ORN Team
+  - ORN Community
 date: 2023-10-30
 template: main.html
 ---
 
-# Affiliations
+ORN affiliations are designed to connect people and organizations around shared
+open research goals. Affiliation is not about creating a single centralized
+team; it is about building a trusted network where different groups can
+coordinate, exchange resources, and collaborate while keeping their own mission
+and identity.
 
-Our affiliations are designed to foster a vibrant community of researchers,
-organizations, and partners dedicated to advancing the frontiers of knowledge.
-By affiliating with us, members join a network committed to the promotion of
-open research, collaboration, and the exchange of ideas across various
-disciplines. We offer three types of affiliations: Member Affiliation,
-Organization Affiliation, and Partnership. Each category is tailored to meet the
-diverse needs and contributions of our community members.
+## Affiliation pathways
 
-## Member Affiliation
+### Member affiliation
 
-Member Affiliation is open to researchers, educators, and professionals who wish
-to engage with our network on a personal level. This affiliation provides access
-to our resources, events, and a platform for individuals to share their
-research, collaborate with peers, and contribute to the collective advancement
-of knowledge. Individual Affiliates benefit from networking opportunities,
-access to exclusive content, and the ability to participate in community-driven
-projects.
+For researchers, educators, research software engineers, students, and
+professionals who want to participate as individuals. Members can connect with
+peers, share projects and opportunities, contribute knowledge, and participate
+in community activities.
 
-## Organization Affiliation
+[Learn about member affiliation](/affiliations/members/){ .orn-inline-button }
 
-Organization Affiliation is designed for research institutions, academic
-departments, non-profits, and other entities that aim to align with our mission
-of promoting open and collaborative research. By becoming an Organization
-Affiliate, entities can showcase their commitment to advancing research, share
-their achievements and initiatives with a broader audience, and collaborate on
-projects that complement their goals. Benefits include visibility within our
-network, opportunities for joint events, and a platform for sharing resources
-and findings with the community.
+### Organization affiliation
 
-## Partnership
+For universities, departments, research centers, laboratories, scientific
+societies, non-profits, open-source projects, and other groups aligned with open
+research practices. Organization affiliation helps groups become more visible,
+share resources, and identify collaboration opportunities.
 
-The Partnership Affiliation with ORN offers businesses and organizations an
-opportunity to engage directly with the forefront of open research and
-innovation. This strategic alliance is designed to mutually benefit both our
-partners and the ORN community by providing services, tools, and opportunities
-that support the advancement of open science. Partners can leverage ORN’s
-network to showcase their services, contributing to a rich ecosystem of
-resources that empower scientific research and development. This collaboration
-not only enhances the partner's visibility within a vibrant community focused on
-research and innovation, that also aligns with a commitment to fostering open
-and accessible research.
+[Learn about organization affiliation](/affiliations/organizations/){ .orn-inline-button }
 
-## Conclusion
+### Partner affiliation
 
-We welcome all who are committed to the principles of open research and
-collaboration to join us as we work together to advance knowledge and
-innovation. Whether you are an individual looking to connect with like-minded
-peers, an organization aiming to highlight your research endeavors, or a
-potential partner interested in shaping the future of open research, we have an
-affiliation option to suit your objectives. Join us in our mission to create a
-more open, collaborative, and innovative research community.
+For companies, foundations, service providers, and institutions that want to
+support the open research ecosystem through services, infrastructure, funding,
+training, events, or strategic collaboration.
+
+[Learn about partnerships](/affiliations/partnership/){ .orn-inline-button }
+
+## What affiliation enables
+
+Affiliation creates a foundation for:
+
+- discovering collaborators across disciplines and regions;
+- sharing training, events, publications, and project opportunities;
+- connecting research groups with open-source and data-science expertise;
+- supporting sustainable infrastructure for scientific communities;
+- creating partnerships that benefit both contributors and the wider network.
+
+## Who should join
+
+ORN welcomes groups and individuals who value open science, open-source
+technology, respectful collaboration, and transparent community practices. The
+network is especially suited for communities that want to increase visibility,
+share resources, and collaborate across institutional boundaries.

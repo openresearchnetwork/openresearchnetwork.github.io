@@ -1,74 +1,57 @@
 {% extends "main.html" %}
 
-{% block header_extra %}
-<style>
-  .main-nav > li > a {
-    color: #000000 !important;
-  }
-</style>
-
-{% endblock header_extra%}
-
 {% block content_inner %}
-<div class="row pt-0">
-  <div class="col mx-auto pt-0">
-    {{ page.content }}
-  </div>
-</div>
+  {{ page.content }}
 
-<div class="row">
-  <div class="col mx-auto pt-3">
-
+  {% if page.meta.get("members") %}
+  <div class="orn-directory-grid">
     {% for member in page.meta["members"] %}
-
-    <div class="row">
-      <div class="col-4 text-center">
-        <a href="{{ member.url }}">
-          <img src="{{ member.thumbnail }}" />
-        </a>
+    <article class="orn-directory-card orn-directory-card--person">
+      <div class="orn-directory-avatar">
+        <img src="{{ member.thumbnail }}" alt="{{ member.name }}" loading="lazy" />
       </div>
-      <div class="col-8">
+      <div class="orn-directory-content">
         <h2>{{ member.name }}</h2>
-        <p class="py-0"><strong>Academic Title</strong>: {{ member.academic_title }}</p>
-        <p class="py-0"><strong>Professional Title</strong>: {{ member.professional_title }}</p>
-        <p class="py-0"><strong>ORCID</strong>: {{ member.orcid }}</p>
-        {% if member.work_areas %}
-        <p class="py-0"><strong>Work Areas:</strong>
-        {{ ", ".join(member.work_areas) }}
-        </p>
-        {% endif %}
-        {% if member.affiliations %}
-        <p class="py-0"><strong>Other Affiliations:</strong>
-        {{ ", ".join(member.affiliations) }}
-        </p>
-        {% endif %}
-        <p class="py-0"><strong>Contact</strong>: {{ member.contact }}</p>
-        <p>
-        {% if "github" in member.social_network  %}
-          <a href="{{ member.social_network.get("github") }}"><i
-              class="fa fa-brands fa-github-square position-static text-dark"></i></a>
-        {% endif %}
-        {% if "twitter" in member.social_network  %}
-          <a href="{{ member.social_network.get("twitter") }}"><i
-            class="fa fa-brands fa-twitter-square"></i>
+        <p class="orn-directory-role">{{ member.professional_title }}</p>
+        <dl class="orn-profile-list">
+          {% if member.academic_title %}
+          <div><dt>Academic background</dt><dd>{{ member.academic_title }}</dd></div>
+          {% endif %}
+          {% if member.orcid %}
+          <div><dt>ORCID</dt><dd>{{ member.orcid }}</dd></div>
+          {% endif %}
+          {% if member.work_areas %}
+          <div><dt>Work areas</dt><dd>{{ ", ".join(member.work_areas) }}</dd></div>
+          {% endif %}
+          {% if member.affiliations %}
+          <div><dt>Other affiliations</dt><dd>{{ ", ".join(member.affiliations) }}</dd></div>
+          {% endif %}
+        </dl>
+        <div class="orn-directory-links" aria-label="{{ member.name }} links">
+          {% if member.contact %}
+          <a href="mailto:{{ member.contact }}">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact
           </a>
-        {% endif %}
-        {% if "linkedin" in member.social_network  %}
-          <a href="{{ member.social_network.get("linkedin") }}"><i
-            class="fa fa-brands fa-linkedin"></i>
+          {% endif %}
+          {% if member.social_network.github %}
+          <a href="{{ member.social_network.github }}" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
           </a>
-        {% endif %}
-        {% if "researchgate" in member.social_network  %}
-          <a href="{{ member.social_network.get("researchgate") }}"><i
-            class="fa-solid fa-registered"></i>
+          {% endif %}
+          {% if member.social_network.linkedin %}
+          <a href="{{ member.social_network.linkedin }}" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
           </a>
-        {% endif %}
-        </p>
+          {% endif %}
+          {% if member.social_network.researchgate %}
+          <a href="{{ member.social_network.researchgate }}" target="_blank" rel="noopener">
+            ResearchGate
+          </a>
+          {% endif %}
+        </div>
       </div>
-    </div>
-    <hr />
-
+    </article>
     {% endfor %}
   </div>
-</div>
+  {% endif %}
 {% endblock content_inner %}

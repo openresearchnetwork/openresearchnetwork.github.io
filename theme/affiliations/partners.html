@@ -1,50 +1,33 @@
 {% extends "main.html" %}
-{% block header_extra %}
-<style>
-  .main-nav > li > a {
-    color: #000000 !important;
-  }
-</style>
-
-{% endblock header_extra%}
 
 {% block content_inner %}
-<div class="row pt-0">
-  <div class="col mx-auto pt-0">
-    {{ page.content }}
-  </div>
-</div>
+  {{ page.content }}
 
-<div class="row">
-  <div class="col mx-auto pt-3">
-
+  {% if page.meta.get("partners") %}
+  <div class="orn-directory-grid">
     {% for partner in page.meta["partners"] %}
-
-    <div class="row">
-      <div class="col-4 text-center">
-        <a href="{{ partner.url }}">
-          <img src="{{ partner.thumbnail }}" />
-        </a>
-      </div>
-      <div class="col-8">
+    <article class="orn-directory-card orn-directory-card--partner">
+      <a class="orn-directory-logo" href="{{ partner.url }}" target="_blank" rel="noopener">
+        <img src="{{ partner.thumbnail }}" alt="{{ partner.name }} logo" loading="lazy" />
+      </a>
+      <div class="orn-directory-content">
         <h2>{{ partner.name }}</h2>
         <p>{{ partner.summary }}</p>
-        <p>
-        {% if "github" in partner  %}
-          <a href="{{ partner.github }}"><i
-              class="fa fa-brands fa-github-square position-static text-dark"></i></a>
-        {% endif %}
-        {% if "twitter" in partner  %}
-          <a href="{{ partner.twitter }}"><i
-            class="fa fa-brands fa-twitter-square"></i>
+        <div class="orn-directory-links" aria-label="{{ partner.name }} links">
+          {% if partner.url %}
+          <a href="{{ partner.url }}" target="_blank" rel="noopener">
+            Website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
           </a>
-        {% endif %}
-        </p>
+          {% endif %}
+          {% if partner.github %}
+          <a href="{{ partner.github }}" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+          </a>
+          {% endif %}
+        </div>
       </div>
-    </div>
-    <hr />
-
+    </article>
     {% endfor %}
   </div>
-</div>
+  {% endif %}
 {% endblock content_inner %}

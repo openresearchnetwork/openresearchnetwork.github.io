@@ -1,19 +1,18 @@
 ---
-title: Open Research Network
+title: "Organization affiliation"
+description: "A collaboration pathway for universities, labs, research centers, scientific communities, open-source projects, and mission-aligned organizations."
+section_label: "Network"
 authors:
-  - ORN Team
+  - ORN Community
 date: 2023-10-30
 template: affiliations/partners.html
 partners:
   - name: Open Science Labs
     summary: |
-      Open Science Labs is dedicated to advancing the
-      scientific research through collaboration, innovation, and education.
-      Our mission is to create a more inclusive, transparent, and
-      accessible scientific community. Its goal is to empower researchers,
-      educators, and students by providing resources, tools, and a
-      collaborative platform for sharing knowledge and advancing
-      open science initiatives.
+      Open Science Labs advances scientific research through collaboration,
+      innovation, and education. Its work supports inclusive, transparent, and
+      accessible scientific communities through open science initiatives,
+      learning programs, and shared resources.
     thumbnail: https://opensciencelabs.org/images/logos/justlogo.png
     url: https://opensciencelabs.org/
     github: https://github.com/opensciencelabs
@@ -21,27 +20,38 @@ partners:
 
   - name: The GRAPH Network
     summary: |
-      The Global Research and Analyses for Public Health (GRAPH)
-      Network is a community of professionals, universities, NGOs,
-      and international organizations working in the fields of Public
-      Health, Software Development, Social Science and Education.
-      We provide training, research and data analysis services to
-      governmental units, NGOs, and private enterprises.
+      The Global Research and Analyses for Public Health (GRAPH) Network is a
+      community of professionals, universities, NGOs, and international
+      organizations working across public health, software development, social
+      science, and education.
     thumbnail: https://thegraphnetwork.org/wp-content/uploads/2021/07/Research_GRAPH_logo-2-1-1-2-3-150x150.png
     url: https://thegraphnetwork.org/
     github: https://github.com/thegraphnetwork
     twitter: https://twitter.com/thegraphnetwork
 ---
 
-# Organization Affiliation
+Organization affiliation helps groups participate in ORN as part of a broader
+open research ecosystem. It is designed for institutions and communities that
+want to share knowledge, increase visibility, and collaborate across domains.
 
-Organization Affiliation with the Open Research Network (ORN) is a collaboration
-model that welcomes academic institutions, research centers, labs, companies,
-and scientific groups to become part of a dynamic research community. This
-affiliation aims to foster open and accessible research across various
-disciplines, enhancing the collective knowledge and innovation capabilities of
-all involved. By joining ORN, affiliated organizations gain access to a broad
-network of resources, collaborative opportunities, and the chance to contribute
-to the advancement of research in both the academic and private sectors.
+## Who can affiliate
 
-## Affiliated Organizations
+Organization affiliation is open to:
+
+- universities, departments, research centers, and laboratories;
+- scientific societies, working groups, and professional communities;
+- non-profits, public-interest organizations, and foundations;
+- open-source projects and research software communities;
+- companies and groups contributing to open research infrastructure.
+
+## Why affiliate
+
+Affiliated organizations can share initiatives, discover collaborators, host or
+co-organize events, connect with students and contributors, and participate in
+projects that align with their mission.
+
+The goal is not to centralize control. The goal is to create a reliable network
+where organizations can find each other, coordinate around shared needs, and
+make open research more sustainable.
+
+## Affiliated organizations

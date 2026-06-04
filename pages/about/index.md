@@ -1,54 +1,60 @@
-# About the Open Research Network (ORN)
+---
+title: "About Open Research Network"
+description: "ORN is a developing network for universities, labs, scientific groups, research software communities, and partners committed to open and collaborative research."
+section_label: "About"
+template: main.html
+---
 
-## Mission
+Open Research Network (ORN) exists to make collaboration easier for scientific
+communities. We connect people and organizations that want to share knowledge,
+infrastructure, tools, and opportunities in ways that strengthen open research.
 
-At the heart of ORN is our commitment to fostering a global community of
-collaboration. Originating from the Open Science Labs community, we unite
-scientists, researchers, educators, and students from various disciplines. Our
-aim is to streamline the research process by sharing infrastructure and
-resources, enhancing workflows with AI and Data Science, and promoting
-collaborative research ventures across both academic and private sectors.
+## Why ORN exists
 
-## Support
+Research groups often face similar challenges: limited infrastructure, isolated
+projects, fragmented communication, and duplicated effort. ORN is designed as a
+shared space where universities, research centers, laboratories, scientific
+communities, open-source projects, and independent researchers can coordinate
+more effectively.
 
-The foundation of our efforts is reinforced by the Open Science Labs Programs,
-including Incubator, Internship, and Learning Programs, complemented by the
-partnership with The GRAPH Network. This alliance enables us to focus on our
-strategic vision, propelling us towards our objectives with clarity and purpose.
+Instead of building a conventional internal team, ORN is focused on building a
+network: a trusted ecosystem of groups that can collaborate while keeping their
+own identity, priorities, and governance.
 
-## ORN Space
+## What we support
 
-A cornerstone of ORN, ORN Space serves as a digital meeting ground, fostering
-communication and collaboration. Here, members can access a plethora of
-resources ranging from job listings to platforms for sharing research findings
-and opportunities for collaboration. This digital plaza is designed to support
-our community's dynamic needs, enabling seamless exchange of ideas and
-resources.
+ORN supports collaboration around:
 
-## Beyond Competition
+- open science and open-source research software;
+- shared infrastructure, reusable workflows, and community services;
+- research training, mentoring, workshops, and events;
+- publication, project, and opportunity discovery;
+- partnerships between academic, non-profit, public, and private organizations.
 
-We champion the idea that collective endeavor can transcend the traditional
-boundaries of scientific research. By pooling our resources and knowledge, we
-not only overcome limitations but also create an ecosystem where open-source
-solutions thrive, reducing dependencies on proprietary resources.
+## Our approach
 
-## Join Us
+ORN grows through affiliation, partnership, and community participation. We aim
+to create conditions where scientific groups can work together with clarity,
+trust, and shared benefit.
 
-ORN is an open invitation to individuals and organizations eager to contribute
-to the noble cause of advancing science and research teams using open practices.
-We offer various pathways for engagement, aiming to make research more
-inclusive, ethical, and impactful.
+Our work is guided by four principles:
 
-## Vision
+1. **Openness** — knowledge and tools should be easier to access, reuse, and
+   improve.
+2. **Collaboration** — common research challenges are better solved together.
+3. **Trust** — transparent practices, clear expectations, and respectful spaces
+   make collaboration sustainable.
+4. **Impact** — research infrastructure should help communities produce lasting
+   scientific and social value.
 
-Our success is defined by a culture of open collaboration, continuous
-innovation, and a commitment to ethical practices. We envision a future where
-the Open Research Network stands as a beacon for open practices, driving forward
-the frontiers of research for the betterment of society.
+## A network, not a hierarchy
 
-## Partnerships and Affiliations
+ORN is not centered on a fixed team page or a single institutional group. The
+long-term goal is to build a network with universities, labs, scientific
+communities, open-source projects, and partner organizations that can contribute
+in different ways.
 
-We warmly invite entities and individuals to join us in this endeavor. Whether
-through providing services, sharing expertise, or engaging in collaborative
-projects, your contribution is a step towards a more open, accessible, and
-collaborative scientific community.
+If your group shares these values, ORN can be a place to connect, collaborate,
+and make your work more visible within a broader open research ecosystem.
+
+[Explore affiliation pathways](/affiliations/){ .orn-inline-button }

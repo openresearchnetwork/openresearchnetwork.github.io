@@ -1,43 +1,35 @@
-## Support Open Research Network: Donate Today
+---
+title: "Support open research"
+description: "Donations help ORN build shared infrastructure, learning opportunities, and community programs for open science and research software."
+section_label: "Support"
+template: main.html
+---
 
-At Open Research Network, we're dedicated to fostering innovation, collaboration,
-and openness in science and technology. Your donation can make a significant
-impact, enabling us to support and expand our community-driven initiatives.
-Here's why your contribution matters:
+Open Research Network is building a collaborative ecosystem for open science,
+research software, training, and shared infrastructure. Your support helps us
+create opportunities that are difficult for individual groups to sustain alone.
 
-### Empowerment Through Education
+## What donations support
 
-Your support helps us offer workshops, courses, and mentorship programs,
-empowering individuals with the skills and knowledge to contribute to open
-science and technology. We focus on creating accessible learning opportunities
-for all, regardless of background or experience.
+Donations help us invest in work that benefits the wider research community:
 
-### Advancing Open Source Projects
+- workshops, courses, mentoring, and learning materials;
+- community events and collaboration spaces;
+- support for open-source scientific projects;
+- infrastructure, documentation, and operational coordination;
+- outreach to universities, labs, scientific groups, and partner communities.
 
-Donations fuel our Incubator and Internship programs, providing vital resources
-to open source projects that are the backbone of scientific research and
-innovation. With your help, we can offer more projects the support they need to
-grow, thrive, and contribute to the open science ecosystem.
+## Why it matters
 
-### Building a Collaborative Community
+Open research depends on more than good ideas. It needs time, coordination,
+maintenance, documentation, and spaces where people can learn and collaborate.
+Financial support helps ORN turn community energy into durable programs and
+resources.
 
-Your contribution aids in the development of a supportive, collaborative
-environment where individuals can share ideas, collaborate on projects, and make
-meaningful connections. This community spirit accelerates the progress of open
-science and technology, leading to advancements that benefit society as a whole.
+## Donate through GitHub Sponsors
 
-### Impacting Society
-
-Open Research Network is committed to using open science principles to tackle
-real-world problems. Your donation supports projects with the potential to make
-significant societal impacts, from environmental conservation to public health
-advancements.
-
-### How to Donate
-
-Open Research Network accepts donations through GitHub Sponsors. To contribute,
-please click the button below, which will direct you to our GitHub Sponsors
-page:
+ORN currently accepts donations through GitHub Sponsors. The button below will
+open the sponsorship page.
 
 <iframe
   src="https://github.com/sponsors/OpenScienceLabs/button"
@@ -46,6 +38,5 @@ page:
   width="114"
   style="border: 0; border-radius: 6px;"></iframe>
 
-Every contribution, no matter the size, makes a difference. Together, we can
-continue to build an open, inclusive, and innovative future for science and
-technology. Thank you for considering a donation to Open Research Network.
+Every contribution helps. Thank you for supporting a more open, collaborative,
+and sustainable future for science and technology.

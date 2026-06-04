@@ -1,7 +1,9 @@
 ---
-title: Open Research Network
+title: "Member affiliation"
+description: "A pathway for researchers, educators, students, research software engineers, and open-science practitioners who want to participate in the ORN network."
+section_label: "Network"
 authors:
-  - ORN Team
+  - ORN Community
 date: 2023-10-30
 template: affiliations/individuals.html
 members:
@@ -26,14 +28,28 @@ members:
       researchgate: https://www.researchgate.net/profile/Ivan-Ogasawara-2
 ---
 
-# Member Affiliation
+Member affiliation is for individuals who want to contribute to open research
+through collaboration, shared knowledge, research software, training, mentoring,
+or community building.
 
-Member Affiliation with the Open Research Network (ORN) invites individuals
-engaged in research across academia and the private sector to join a growing
-community committed to the principles of open research. This affiliation offers
-members the opportunity to collaborate, share insights, and access a wide range
-of resources tailored to support research endeavors. As part of ORN, members can
-actively contribute to and benefit from the collective advancement of knowledge,
-fostering innovation and driving research forward in diverse fields.
+## Who this is for
 
-# Affiliated People
+This affiliation is appropriate for:
+
+- researchers and graduate students;
+- educators and scientific communicators;
+- research software engineers and data scientists;
+- open-source maintainers working on scientific tools;
+- professionals supporting research infrastructure and community programs.
+
+## What members can do
+
+Members can use ORN to connect with aligned communities, share opportunities,
+join discussions, contribute to open projects, and help shape a more connected
+research ecosystem.
+
+Affiliation does not require a formal institutional role. Individuals connected
+to universities, research organizations, open-source projects, or independent
+research communities are welcome.
+
+## Affiliated people

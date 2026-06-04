@@ -1,95 +1,74 @@
 ---
-title: "Open Research Network Formula"
-description: "Open Research Network Formula"
+title: "ORN formula"
+description: "The principles that guide how Open Research Network builds trust, collaboration, and sustainable impact across scientific communities."
+section_label: "About"
 date: "2024-02-14"
-authors: ["ORN Team"]
+authors: ["ORN Community"]
+template: main.html
 ---
 
-# Open Research Network  Formula
+The ORN formula describes how we want the network to grow. It is not a rigid
+process or a hierarchy. It is a set of principles for building an open research
+ecosystem that is useful, trustworthy, and sustainable.
 
-This formula will encapsulate the values and practices that contribute to ORN's
-mission of promoting open science and technology through community
-collaboration, education, and project development.
+## Open collaboration
 
-**1. Open Collaboration:** At the heart of ORN lies the belief in open
-collaboration. We thrive by sharing knowledge freely, engaging with diverse
-perspectives, and fostering an environment where everyone is encouraged to
-contribute. Our success is built on the collective wisdom and efforts of our
-community, partners, and stakeholders.
+ORN is built on the belief that scientific progress is stronger when knowledge,
+tools, infrastructure, and learning are shared. We encourage groups to work in
+public when possible, document decisions, and make outputs reusable by others.
 
-**2. Continuous Learning and Innovation:** ORN commits to continuous learning
-and pushing the boundaries of what's possible in open science and technology. We
-encourage curiosity, experimentation, and the application of new ideas to solve
-complex problems. By staying at the forefront of technological and scientific
-advancements, we ensure that our community and projects remain relevant and
-impactful.
+## Institutional respect
 
-**3. Inclusivity and Accessibility:** We believe that open science is for
-everyone. ORN is dedicated to creating inclusive spaces where individuals from
-all backgrounds can learn, contribute, and grow. By removing barriers to entry
-and promoting accessibility, we empower more people to participate in science
-and technology, enriching our community with a wide range of experiences and
-insights.
+The network is designed for collaboration between universities, laboratories,
+research groups, non-profits, open-source projects, and partners. Each group can
+keep its own identity and priorities while participating in shared activities.
 
-**4. Ethical Responsibility:** Our work is guided by a strong sense of ethical
-responsibility. ORN advocates for the responsible use of technology and data,
-ensuring that our projects and collaborations contribute positively to society
-and the environment. We prioritize transparency, accountability, and the ethical
-implications of our actions in all our endeavors.
+## Continuous learning
 
-**5. Community Empowerment:** Success for ORN is measured by the empowerment of
-our community. We invest in programs, resources, and support systems that enable
-our members to achieve their goals, whether they're learning new skills,
-contributing to projects, or leading initiatives that drive open science
-forward. By empowering individuals, we strengthen the foundation of our
-collective mission.
+Open research depends on people learning together. ORN supports workshops,
+mentoring, courses, events, and informal peer exchange so that knowledge can
+move between communities and generations of researchers.
 
-**6. Sustainability and Impact:** In all our activities, ORN emphasizes
-sustainability and long-term impact. We seek to create lasting contributions to
-the fields of open science and technology, focusing on solutions and projects
-that have a positive, enduring effect on research, education, and society as a
-whole.
+## Responsible innovation
 
-**7. Implementation and Adaptation:** Recognizing the dynamic nature of the open
-science ecosystem, ORN remains flexible and responsive to change. We
-continuously assess our strategies and operations, adapting our approach to meet
-emerging challenges and opportunities. This agility ensures that ORN can sustain
-its mission and impact over time.
+AI, data science, automation, and research software can accelerate discovery,
+but they must be used carefully. ORN promotes responsible, transparent, and
+reproducible approaches to technology in research workflows.
 
-**8. Communication Excellence:** At ORN, we understand that effective
-communication is foundational to the success of any project. We encourage our
-community to continually refine their communication skills, fostering clarity,
-openness, and constructive dialogue. Effective communication bridges the gap
-between diverse members of our community, enabling seamless collaboration,
-knowledge sharing, and mutual understanding. By prioritizing transparency in our
-interactions and valuing every voice, we create an environment where ideas
-flourish and challenges are addressed collaboratively. Our commitment to
-communication excellence ensures that all members feel heard, valued, and
-connected, driving the collective success of our initiatives.
+## Inclusive participation
 
-**9. Proactiveness and Initiative:** ORN champions a culture of proactiveness
-and self-driven initiative. We encourage our community members to actively
-engage in projects, propose new ideas, and take the lead in areas where they
-feel passionate. This proactive mindset, coupled with effective communication,
-enables individuals to navigate challenges creatively, seek feedback
-constructively, and contribute significantly to the advancement of open science
-and open source. By fostering an environment where taking initiative is
-celebrated and supported, we empower our members to make meaningful impacts,
-drive innovation, and steer ORN and its projects toward shared goals and
-successes.
+A strong research network should make participation easier for people from
+different backgrounds, regions, institutions, and levels of experience. ORN aims
+to create welcoming spaces where contributors can learn, ask questions, and
+build confidence.
 
-This Success Formula represents the core principles and practices that guide
-Open Research Network. By adhering to these tenets, we aim to foster a vibrant
-community that advances the frontiers of open science and technology, making
-meaningful contributions to the world.
+## Sustainable infrastructure
+
+Scientific communities need infrastructure that can last beyond a single
+project cycle. ORN encourages reusable tools, documented processes, shared
+services, and partnerships that reduce duplicated effort.
+
+## Clear communication
+
+Collaboration depends on communication that is respectful, documented, and easy
+to follow. We value clarity, constructive feedback, and transparent expectations
+across projects and communities.
+
+## Proactive contribution
+
+ORN grows when people and organizations bring ideas forward. We encourage
+members and affiliates to propose events, share needs, identify opportunities,
+and help shape the network through practical contributions.
+
+## Lasting impact
+
+The purpose of the network is to help scientific communities do better work
+together. Success means more visible projects, more reusable tools, more
+connected groups, and more research outcomes that can benefit society.
 
 <small>
-  <i>
-    Note: This Formula is based on the
-    <a
-      href="https://opensciencelabs.org/about/formula/"
-      target="_blank">
-      Open Science Labs Formula
-    </a>.
-  </i>
+  This formula is inspired by the
+  <a href="https://opensciencelabs.org/about/formula/" target="_blank" rel="noopener">
+    Open Science Labs Formula
+  </a>.
 </small>

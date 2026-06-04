@@ -1,19 +1,18 @@
 ---
-title: Open Research Network
+title: "Partners"
+description: "Strategic partnerships for organizations that want to support open research through infrastructure, funding, services, training, events, or expertise."
+section_label: "Network"
 authors:
-  - ORN Team
+  - ORN Community
 date: 2023-10-30
 template: affiliations/partners.html
 partners:
   - name: Open Science Labs
     summary: |
-      Open Science Labs is dedicated to advancing the
-      scientific research through collaboration, innovation, and education.
-      Our mission is to create a more inclusive, transparent, and
-      accessible scientific community. Its goal is to empower researchers,
-      educators, and students by providing resources, tools, and a
-      collaborative platform for sharing knowledge and advancing
-      open science initiatives.
+      Open Science Labs advances scientific research through collaboration,
+      innovation, and education. Its work supports inclusive, transparent, and
+      accessible scientific communities through open science initiatives,
+      learning programs, and shared resources.
     thumbnail: https://opensciencelabs.org/images/logos/justlogo.png
     url: https://opensciencelabs.org/
     github: https://github.com/opensciencelabs
@@ -21,27 +20,33 @@ partners:
 
   - name: The GRAPH Network
     summary: |
-      The Global Research and Analyses for Public Health (GRAPH)
-      Network is a community of professionals, universities, NGOs,
-      and international organizations working in the fields of Public
-      Health, Software Development, Social Science and Education.
-      We provide training, research and data analysis services to
-      governmental units, NGOs, and private enterprises.
+      The Global Research and Analyses for Public Health (GRAPH) Network is a
+      community of professionals, universities, NGOs, and international
+      organizations working across public health, software development, social
+      science, and education.
     thumbnail: https://thegraphnetwork.org/wp-content/uploads/2021/07/Research_GRAPH_logo-2-1-1-2-3-150x150.png
     url: https://thegraphnetwork.org/
     github: https://github.com/thegraphnetwork
     twitter: https://twitter.com/thegraphnetwork
 ---
 
-# Partnership
+ORN partnerships are for organizations that want to strengthen the open research
+ecosystem in practical ways. Partners may contribute services, infrastructure,
+funding, expertise, event support, training opportunities, or collaboration
+pathways for affiliated groups.
 
-Our Partnership initiative is not only about fostering collaborative
-relationships and inviting companies to offer services that benefit our
-affiliates but also about identifying opportunities that are mutually
-beneficial. This strategy ensures that both ORN and its partners can thrive
-together, sharing resources and expertise to further the cause of open and
-accessible research. By joining forces, we aim to create a symbiotic ecosystem
-that accelerates innovation and enhances the research landscape for all
-involved.
+## Partnership goals
 
-## Partners
+A good partnership should create mutual value. ORN aims to connect partner
+organizations with scientific communities that can benefit from their support,
+while helping partners contribute visibly and responsibly to open research.
+
+Partnerships may include:
+
+- support for events, workshops, courses, or mentoring;
+- access to infrastructure, tools, hosting, or technical services;
+- collaboration with affiliated projects and research groups;
+- sponsorship or funding support for open research initiatives;
+- shared communication around open science and open-source work.
+
+## Current partners

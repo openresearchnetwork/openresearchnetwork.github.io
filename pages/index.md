@@ -1,7 +1,7 @@
 ---
 title: Open Research Network
 authors:
-  - ORN Team
+  - ORN Community
 date: 2023-10-30
 template: home.html
 content:
@@ -15,11 +15,13 @@ content:
     efforts, both academic and private, offering tools, platforms, and
     guidance to enhance research workflows.
   supported_by: |
-    We are bolstered by Open Science Labs Programs including the
-    Incubator, Internship, and Learning Programs, and proudly partnered
-    with The GRAPH Network, our Fiscal Sponsor. This support allows us to
-    concentrate on strategic and operational activities, driving forward
-    our mission with efficiency and focus.
+    ORN grows from the Open Science Labs ecosystem and is supported by
+    programs such as the Incubator, Internship, and Learning Programs.
+    Funding and financial administration are not handled through a direct
+    ORN fiscal sponsor; instead, access paths are coordinated through OSL
+    partnerships, including Open Source Collective for eligible open-source
+    projects and The GRAPH Network for financial management of non-open-source
+    or broader research initiatives.
   open_space: |
     <p>ORN Space is our digital plaza, offering:</p>
     <ul>
@@ -56,12 +58,11 @@ content:
     can make a lasting impact on the world.
   partnership: |
     We are seeking partnerships with organizations interested in
-    supporting this research ecosystem. Our initiative offers a
-    unique opportunity for entities to contribute resources, expertise,
-    or services that can benefit the wider scientific community. This
-    collaboration will not only facilitate research and development but
-    also demonstrate a shared commitment to advancing knowledge and
-    innovation.
+    supporting this research ecosystem through funding access, financial
+    management, infrastructure, services, expertise, training, or events.
+    ORN does not currently maintain a direct fiscal sponsorship structure;
+    instead, eligible initiatives may access support through OSL partnership
+    pathways.
   affiliations:
     members: |
       Individuals linked to academic or scientific bodies can join to

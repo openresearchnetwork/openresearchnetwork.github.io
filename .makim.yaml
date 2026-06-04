@@ -1,10 +1,9 @@
-version: 1.0
 groups:
   pages:
-    targets:
+    tasks:
       pre-build:
         help: pre-build step
-        shell: bash
+        backend: bash
         run: |
           # not used yet
           exit 0
@@ -20,12 +19,31 @@ groups:
 
       build:
         help: build the static page
-        dependencies:
-          - target: pages.pre-build
+        hooks:
+          pre-run:
+            - task: pages.pre-build
         run: mkdocs build --verbose --clean
 
       preview:
         help: preview the web page dynamically
-        dependencies:
-          - target: pages.pre-build
-        run: mkdocs serve --watch pages --watch theme
+        hooks:
+          pre-run:
+            - task: pages.pre-build
+        backend: bash
+        run: |
+          set -euo pipefail
+
+          HOST="${HOST:-127.0.0.1}"
+          PORT="${PORT:-$(HOST="${HOST}" python - <<'PY'
+          import os
+          import socket
+
+          host = os.environ["HOST"]
+          with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+              sock.bind((host, 0))
+              print(sock.getsockname()[1])
+          PY
+          )}"
+
+          echo "Starting MkDocs preview at http://${HOST}:${PORT}/"
+          mkdocs serve --dev-addr "${HOST}:${PORT}" --watch pages --watch theme

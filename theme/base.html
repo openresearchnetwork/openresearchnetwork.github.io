@@ -1,7 +1,16 @@
 {% set menu_2nd_level_selected = [] %}
+{% for nav_item in nav %}
+  {% if nav_item.children and nav_item.active %}
+    {% for nav_child in nav_item.children %}
+      {% if nav_child.title != "__index__" %}
+        {% set _ = menu_2nd_level_selected.append(nav_child) %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 
 <!DOCTYPE html>
-<html>
+<html data-mode="lit">
   <head>
     <title>
       {% if page.title %}{{ page.meta["title"] }} - {% endif %}{{ config.site_name }}
@@ -18,8 +27,8 @@
     </script>
     <link rel=stylesheet
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel=stylesheet href="/css/index.css">
     <link rel=stylesheet href="/css/styles.css">
+    <link rel=stylesheet href="/css/index.css">
     <title>Open Research Network</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -89,10 +98,6 @@
             <div class="d-block d-sm-block d-md-none">
               {% for nav_child in nav_item.children %}
               {% if nav_child.title != "__index__" %}
-              {% if nav_item.active and nav_item == nav_child.parent %}
-              {{ menu_2nd_level_selected.append(nav_child) or "" }}
-              {% endif %}
-
               <div class="nav {% if nav_child.active %}nav_active{% endif %}">
                 <a href="{{ nav_child.url|url }}" class="nav_item" title="{{ nav_child.title }}">
                   {{ nav_child.title }}
@@ -107,53 +112,49 @@
           {% endfor %}
           {% endif %}
         </div>
-        <div class="follow">
-          <a href="https://github.com/openresearchnetwork" target="_blank">
+        <div class="follow" aria-label="Community links">
+          <a
+            href="https://github.com/openresearchnetwork"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Research Network on GitHub">
             <svg class="icon">
               <title>github</title>
               <use xlink:href="#github"/>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/company/open-research-network/" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/open-research-network/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Research Network on LinkedIn">
             <svg class="icon">
               <title>linkedin</title>
               <use xlink:href="#linkedin"/>
             </svg>
           </a>
-          <a href="https://twitter.com/researchnetx" target="_blank">
-            <svg class="icon">
-              <title>twitter</title>
-              <use xlink:href="#twitter"/>
-            </svg>
-          </a>
-          <a href="/discord" target="_blank">
+          <a
+            href="/discord"
+            target="_blank"
+            rel="noopener"
+            class="nav_community"
+            aria-label="Join the Open Research Network community on Discord">
             <svg class="icon">
               <title>discord</title>
               <use xlink:href="#discord"/>
             </svg>
+            <span>Community</span>
           </a>
-          <a href="/feed_rss_created.xml" target="_blank">
-            <svg class="icon">
-              <title>rss</title>
-              <use xlink:href="#rss"/>
-            </svg>
-          </a>
-          <a href="https://www.youtube.com/@openresearchnetwork" target="_blank">
-            <svg class="icon">
-              <title>youtube</title>
-              <use xlink:href="#youtube"/>
-            </svg>
-          </a>
-          <div class=color_mode><input type=checkbox class=color_choice id=mode></div>
         </div>
       </nav>
-      <nav class="nav d-none d-sm-none d-md-block">
+      {% if menu_2nd_level_selected %}
+      <nav class="nav nav_submenu_bar d-none d-sm-none d-md-block" aria-label="Section navigation">
         <div class='nav_body nav_extra extra'>
           <!-- SUB-MENU -->
           {# Extract the url for a nested menu from the __index__ child -#}
           {% for nav_child in menu_2nd_level_selected -%}
             {% if not nav_child.children -%}
-            <div class="{% if nav_child.active %}nav_active{% endif %}" style="border-top:1px solid white;">
+            <div class="nav_extra_item {% if nav_child.active %}nav_active{% endif %}">
               <a href="{{ nav_child.url|url }}" class="nav_item" title="{{ nav_child.title }}">
                 {{ nav_child.title }}
               </a>
@@ -161,7 +162,7 @@
             {% else %}
               {% for subsubmenu in nav_child.children -%}
                 {% if subsubmenu.title == "__index__" -%}
-                <div class="{% if nav_child.active %}nav_active{% endif %}" style="border-top:1px solid white;">
+                <div class="nav_extra_item {% if nav_child.active %}nav_active{% endif %}">
                   <a href="{{ subsubmenu.url|url }}" class="nav_item" title="{{ nav_child.title }}">
                     {{ nav_child.title }}
                   </a>
@@ -172,8 +173,9 @@
           {% endfor %}
         </div>
       </nav>
+      {% endif %}
     </header>
-    <main>
+    <main class="{% if menu_2nd_level_selected %}main_with_submenu{% else %}main_without_submenu{% endif %}">
       <style>
         .card-columns div{height:200px}
         .card-columns img{height:160px}
@@ -181,16 +183,6 @@
         footer.citation *{margin-top:20px;font-size:10px!important;font-style:italic!important}
       </style>
       <div class=container>
-        <div class="row mb-0 mt-5">
-          {% if menu_2nd_level_selected %}
-          <div class="mt-5"></div>
-          {% endif %}
-          <div class="col alert alert-danger mt-5 mb-0">
-            The Open Research Network (ORN) is currently in its
-            development phase, with an anticipated official launch in 2025. We
-            invite you to stay connected for updates and announcements!
-          </div>
-        </div>
         <section class="wrap content">
           {% block content %}
           {{ page.content }}
@@ -270,8 +262,20 @@
     </svg>
     {% block footer %}
     <footer class=footer>
-      <div class="footer_inner wrap pale">
-        <p>Copyright&nbsp;<span class=year></span>&nbsp;Open Research Network.</p>
+      <div class="footer_inner wrap pale site_footer_inner">
+        <div class="footer_identity">
+          <strong>Open Research Network</strong>
+          <span>Building an open, collaborative research ecosystem.</span>
+        </div>
+        <div class="footer_legal">
+          <p>Copyright&nbsp;<span class=year></span>&nbsp;Open Research Network.</p>
+          <p>
+            Website content is licensed under
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              CC BY-SA 4.0
+            </a>.
+          </p>
+        </div>
         <a class=to_top href=#documentTop>
           <svg class="icon">
             <title>to-top</title>
